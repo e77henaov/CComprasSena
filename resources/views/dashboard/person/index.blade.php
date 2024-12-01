@@ -2,7 +2,7 @@
 @section('titulo','Personas')
 @include('layouts/navigation')
 @section('contenido')
-<main>
+<div class="container py-4">
     <div>
     <h1>Listado de Personas</h1>
     <br>
@@ -56,6 +56,6 @@
     </div>
 
     
-</main>
+</div>
 
 @endsection

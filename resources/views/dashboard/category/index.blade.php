@@ -2,7 +2,7 @@
 @section('titulo','Categorias')
 @include('layouts/navigation')
 @section('contenido')
-<main>
+<div class="container py-4">
     <div>
     <h1>Listado de Categorias</h1>
     <br>
@@ -46,6 +46,6 @@
     </div>
 
     
-</main>
+</div>
 
 @endsection

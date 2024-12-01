@@ -10,6 +10,7 @@ use App\Http\Controllers\IncomeController;
 use App\Http\Controllers\PersonController;
 use App\Http\Controllers\Sale_detailController;
 use App\Http\Controllers\SaleController;
+use App\Http\Controllers\RoleController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -28,6 +29,8 @@ Route::middleware('auth')->group(function () {
     Route::resource('/dashboard/article', ArticleController::class);
     Route::resource('/dashboard/category', CatecoryController::class);
     Route::resource('/dashboard/person', PersonController::class);
+    Route::resource('/dashboard/income', IncomeController::class);
+    Route::resource('role', RoleController::class);
 });
 
 require __DIR__.'/auth.php';

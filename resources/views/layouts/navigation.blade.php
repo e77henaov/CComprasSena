@@ -18,17 +18,22 @@
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('category.index')" :active="request()->routeIs('category.*')">
-                        {{ __('Categoria') }}
+                        {{ __('Categorias') }}
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('article.index')" :active="request()->routeIs('article.*')">
-                        {{ __('Articulo') }}
+                        {{ __('Articulos') }}
                     </x-nav-link>
                 </div>             
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('person.index')" :active="request()->routeIs('person.*')">
-                        {{ __('Persona') }}
+                        {{ __('Personas') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('income.index')" :active="request()->routeIs('income.*')">
+                        {{ __('Ingresos') }}
                     </x-nav-link>
                 </div>               
             </div>
